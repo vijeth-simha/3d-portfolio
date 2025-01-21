@@ -1,13 +1,7 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  return <div>3D Developer Portfolio</div>;
+};
 
-  return (
-    <div>
-      3D Developer Portfolio
-    </div>
-  )
-}
-
-export default App
+export default App;
