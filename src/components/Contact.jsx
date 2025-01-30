@@ -75,6 +75,10 @@ const Contact = () => {
           </button>
         </form>
       </motion.div>
+
+      <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
+        
+      </motion.div>
     </div>
   );
 };
