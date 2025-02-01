@@ -1,5 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-/* eslint-disable react/prop-types */
+ 
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -20,8 +20,10 @@ const Contact = () => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
-  const handleSubmit = (e) => {};
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true)
+  };
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 over">
       <motion.div
